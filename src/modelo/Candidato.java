@@ -5,16 +5,20 @@ public class Candidato {
 	private String nomeCandidato;
 	private String emailCandidato;
 	private String miniApresentacaoCandidato;
-	private Object curriculoCandidato;
+	private String curriculoCandidato;
 	
 	public void candidatarvaga(Vaga vaga){
 		
 		vaga.ReceberCandidato(this);
 	}
 
-	
-	
-	
+	public Candidato(String nomeCandidato, String emailCandidato, String miniApresentacaoCandidato, String curriculoCandidato) {
+		this.nomeCandidato = nomeCandidato;
+		this.emailCandidato = emailCandidato;
+		this.miniApresentacaoCandidato = miniApresentacaoCandidato;
+		this.curriculoCandidato = curriculoCandidato;
+	}
+
 	public String getNomeCandidato() {
 		return nomeCandidato;
 	}
@@ -43,7 +47,7 @@ public class Candidato {
 		return curriculoCandidato;
 	}
 
-	public void setCurriculoCandidato(Object curriculoCandidato) {
+	public void setCurriculoCandidato(String curriculoCandidato) {
 		this.curriculoCandidato = curriculoCandidato;
 	}
 

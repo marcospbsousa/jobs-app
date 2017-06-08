@@ -8,16 +8,14 @@ public class Empresa {
 	private String descricaoEmpresa;
 	private String siteEmpresa;
 	private String cidadeEmpresa;
-	private Object logotipoEmpresa;
-	
+
 	private ArrayList<Vaga> vagasDisponiveis = new ArrayList<Vaga>();
 
-	public Empresa(String nomeEmmpresa, String descricaoEmpresa, String siteEmpresa, String cidadeEmpresa, Object logotipoEmpresa, ArrayList<Vaga> vagasDisponiveis) {
+	public Empresa(String nomeEmmpresa, String descricaoEmpresa, String siteEmpresa, String cidadeEmpresa, ArrayList<Vaga> vagasDisponiveis) {
 		this.nomeEmmpresa = nomeEmmpresa;
 		this.descricaoEmpresa = descricaoEmpresa;
 		this.siteEmpresa = siteEmpresa;
 		this.cidadeEmpresa = cidadeEmpresa;
-		this.logotipoEmpresa = logotipoEmpresa;
 		this.vagasDisponiveis = vagasDisponiveis;
 	}
 
@@ -51,14 +49,6 @@ public class Empresa {
 
 	public void setCidadeEmpresa(String cidadeEmpresa) {
 		this.cidadeEmpresa = cidadeEmpresa;
-	}
-
-	public Object getLogotipoEmpresa() {
-		return logotipoEmpresa;
-	}
-
-	public void setLogotipoEmpresa(Object logotipoEmpresa) {
-		this.logotipoEmpresa = logotipoEmpresa;
 	}
 
 	public ArrayList<Vaga> getVagasDisponiveis() {
